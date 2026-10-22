@@ -33,7 +33,7 @@
       <a href="#services">Services</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a class="btn btn-sm" href="#contact">Start a project</a>
+    <button class="btn btn-sm" data-intake>Start a project</button>
   </div>
 </header>
 
@@ -48,7 +48,7 @@
         <h1>We build the platform.<br><span class="grad">We film the story.</span></h1>
         <p class="lead">Mindful Measures is a team of AI specialists. We design websites, custom platforms and personal command centers with AI built in, and produce the studio-quality video that sells them. We run our own products too, led by <strong>REIGN</strong>.</p>
         <div class="cta-row">
-          <a class="btn" href="#contact">Start a project</a>
+          <button class="btn" data-intake>Start a project</button>
           <button class="btn btn-ghost" data-video="assets/video/showreel.mp4" data-title="Mindful Measures showreel">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Watch the reel
           </button>
@@ -99,7 +99,7 @@
             <li><b>Industry modules</b> Long-term care, healthcare, hospitality, staffing, construction and more.</li>
           </ul>
           <div class="cta-row">
-            <a class="btn" href="mailto:info@reignos.com?subject=REIGN%20demo%20request">Request a REIGN demo</a>
+            <button class="btn" data-intake="REIGN demo">Request a REIGN demo</button>
           </div>
         </div>
         <button class="media" data-video="assets/video/reign.mp4" data-title="REIGN">
@@ -288,8 +288,8 @@
     <div class="wrap contact-in">
       <img src="assets/brand/mm-font.svg" alt="" width="72" height="54">
       <h2>Let's build yours.</h2>
-      <p class="sub">Tell us what you are trying to run, fix or show. We will come back with a plan.</p>
-      <a class="btn btn-lg" href="mailto:info@reignos.com?subject=New%20project%20with%20Mindful%20Measures">info@reignos.com</a>
+      <p class="sub">Tell us what you are trying to run, fix or show. It takes about two minutes, and we will come back with a plan.</p>
+      <button class="btn btn-lg" data-intake>Start a project</button>
       <address>Mindful Measures, Incorporated<br>4201 North 27th Street, Suite 500B<br>Milwaukee, WI 53216</address>
     </div>
   </section>
@@ -301,6 +301,80 @@
     <span>REIGN · ROSE · BES · Victoria LMS · Curbside</span>
   </div>
 </footer>
+
+<dialog id="intake" aria-labelledby="intake-title">
+  <form class="intake" novalidate>
+    <button type="button" class="close" data-close aria-label="Close">×</button>
+    <div class="intake-head">
+      <p class="eyebrow">Start a project</p>
+      <h2 id="intake-title">Let's build yours.</h2>
+      <ol class="dots" aria-hidden="true"><li class="on"></li><li></li><li></li></ol>
+    </div>
+
+    <fieldset class="step" data-step="1">
+      <legend>What can we help with?</legend>
+      <p class="hint">Choose everything that applies.</p>
+      <div class="chips">
+              <label class="chip"><input type="checkbox" name="needs" value="Website design and build"><span>Website design and build</span></label>
+              <label class="chip"><input type="checkbox" name="needs" value="Custom platform"><span>Custom platform</span></label>
+              <label class="chip"><input type="checkbox" name="needs" value="Personal command center"><span>Personal command center</span></label>
+              <label class="chip"><input type="checkbox" name="needs" value="Production video"><span>Production video</span></label>
+              <label class="chip"><input type="checkbox" name="needs" value="AI assistant or automation"><span>AI assistant or automation</span></label>
+              <label class="chip"><input type="checkbox" name="needs" value="REIGN demo"><span>REIGN demo</span></label>
+              <label class="chip"><input type="checkbox" name="needs" value="ROSE, BES, Victoria LMS or Curbside"><span>ROSE, BES, Victoria LMS or Curbside</span></label>
+              <label class="chip"><input type="checkbox" name="needs" value="Something else"><span>Something else</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset class="step" data-step="2" hidden>
+      <legend>Tell us about it</legend>
+      <label class="field"><span>What are you trying to run, fix or show? *</span>
+        <textarea name="details" rows="5" maxlength="4000" placeholder="A few sentences is plenty: who it's for, what's not working today, what success looks like."></textarea></label>
+      <div class="two">
+        <label class="field"><span>Timeline</span>
+          <select name="timeline"><option value="">Choose one</option><option>As soon as possible</option><option>Within 1 to 3 months</option><option>Within 3 to 6 months</option><option>Just exploring</option></select></label>
+        <label class="field"><span>Budget range</span>
+          <select name="budget"><option value="">Choose one</option><option>Under $5,000</option><option>$5,000 to $15,000</option><option>$15,000 to $50,000</option><option>Over $50,000</option><option>Not sure yet</option></select></label>
+      </div>
+      <label class="field"><span>Current website or link (optional)</span>
+        <input name="link" type="text" maxlength="300" placeholder="yourbusiness.com"></label>
+    </fieldset>
+
+    <fieldset class="step" data-step="3" hidden>
+      <legend>How do we reach you?</legend>
+      <div class="two">
+        <label class="field"><span>Your name *</span><input name="name" type="text" autocomplete="name" maxlength="120"></label>
+        <label class="field"><span>Organization</span><input name="organization" type="text" autocomplete="organization" maxlength="160"></label>
+      </div>
+      <div class="two">
+        <label class="field"><span>Email *</span><input name="email" type="email" autocomplete="email" maxlength="200"></label>
+        <label class="field"><span>Phone</span><input name="phone" type="tel" autocomplete="tel" maxlength="40"></label>
+      </div>
+      <div class="field"><span>Best way to reach you</span>
+        <div class="radios">
+          <label><input type="radio" name="contactBy" value="Email" checked> Email</label>
+          <label><input type="radio" name="contactBy" value="Phone call"> Phone call</label>
+          <label><input type="radio" name="contactBy" value="Text message"> Text message</label>
+        </div>
+      </div>
+      <label class="field"><span>How did you hear about us? (optional)</span><input name="heardFrom" type="text" maxlength="200"></label>
+      <label class="hp" aria-hidden="true">Leave this empty<input name="website" type="text" tabindex="-1" autocomplete="off"></label>
+    </fieldset>
+
+    <div class="step done" data-step="4" hidden>
+      <div class="done-mark" aria-hidden="true">✓</div>
+      <h3>Thanks<span data-first></span>. We've got it.</h3>
+      <p>Your request is with our team and we'll reach out soon. A confirmation is on its way to your inbox.</p>
+      <button type="button" class="btn" data-close>Done</button>
+    </div>
+
+    <p class="form-error" role="alert" hidden></p>
+    <div class="intake-nav">
+      <button type="button" class="btn btn-ghost" data-back hidden>Back</button>
+      <button type="button" class="btn" data-next>Next</button>
+    </div>
+  </form>
+</dialog>
 
 <dialog id="player" aria-label="Video player">
   <div class="player-in">
@@ -323,6 +397,84 @@
   dlg.querySelector('.close').addEventListener('click', close);
   dlg.addEventListener('click', e => { if (e.target === dlg) close(); });
   dlg.addEventListener('cancel', e => { e.preventDefault(); close(); });
+  // Project intake
+  const intake = document.getElementById('intake');
+  const form = intake.querySelector('form');
+  const steps = [...form.querySelectorAll('.step')];
+  const dots = [...form.querySelectorAll('.dots li')];
+  const errBox = form.querySelector('.form-error');
+  const back = form.querySelector('[data-back]');
+  const next = form.querySelector('[data-next]');
+  let step = 1, openedAt = 0, source = '';
+
+  const show = n => {
+    step = n;
+    steps.forEach(s => s.hidden = Number(s.dataset.step) !== n);
+    dots.forEach((d, i) => d.classList.toggle('on', i < n));
+    back.hidden = n === 1 || n === 4;
+    next.hidden = n === 4;
+    next.textContent = n === 3 ? 'Send request' : 'Next';
+    form.querySelector('.dots').hidden = n === 4;
+    errBox.hidden = true;
+    const first = steps[n - 1].querySelector('input:not([type=hidden]), textarea, select, button');
+    if (first && n !== 1) first.focus();
+  };
+  const fail = msgs => { errBox.textContent = [].concat(msgs).join(' '); errBox.hidden = false; };
+  const val = name => (form.elements[name]?.value || '').trim();
+  const needs = () => [...form.querySelectorAll('input[name=needs]:checked')].map(i => i.value);
+
+  const check = n => {
+    if (n === 1 && !needs().length) return 'Choose at least one thing we can help with.';
+    if (n === 2 && val('details').length < 10) return 'Tell us a little about the project.';
+    if (n === 3) {
+      if (!val('name')) return 'Please add your name.';
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val('email'))) return 'Please add a valid email address.';
+      if (val('contactBy') !== 'Email' && val('phone').replace(/\D/g, '').length < 10) return 'Add a phone number so we can call or text you.';
+    }
+    return '';
+  };
+
+  document.querySelectorAll('[data-intake]').forEach(b => b.addEventListener('click', () => {
+    if (intake.open) return;
+    form.reset();
+    const pre = b.dataset.intake;
+    if (pre) form.querySelectorAll('input[name=needs]').forEach(i => i.checked = i.value === pre);
+    source = pre || b.closest('section, header')?.id || b.closest('section')?.className || 'page';
+    openedAt = Date.now();
+    show(1);
+    intake.showModal();
+  }));
+  intake.querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', () => intake.close()));
+  intake.addEventListener('click', e => { if (e.target === intake) intake.close(); });
+  back.addEventListener('click', () => show(step - 1));
+
+  next.addEventListener('click', async () => {
+    const problem = check(step);
+    if (problem) return fail(problem);
+    if (step < 3) return show(step + 1);
+    next.disabled = true; next.textContent = 'Sending…';
+    try {
+      const r = await fetch('/api/intake', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          needs: needs(), details: val('details'), timeline: val('timeline'), budget: val('budget'), link: val('link'),
+          name: val('name'), organization: val('organization'), email: val('email'), phone: val('phone'),
+          contactBy: val('contactBy'), heardFrom: val('heardFrom'), website: val('website'),
+          source, elapsedMs: Date.now() - openedAt,
+        }),
+      });
+      const data = await r.json().catch(() => ({}));
+      if (!r.ok || !data.ok) throw new Error((data.errors || ['Something went wrong. Please try again.']).join(' '));
+      form.querySelector('[data-first]').textContent = ', ' + val('name').split(/\s+/)[0];
+      show(4);
+    } catch (e) {
+      fail(e.message || 'Something went wrong. Please try again.');
+    } finally {
+      next.disabled = false;
+      if (step === 3) next.textContent = 'Send request';
+    }
+  });
   if (matchMedia('(prefers-reduced-motion: reduce)').matches) document.querySelector('.hero-bg').pause();
 </script>
 </body>
