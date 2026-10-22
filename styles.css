@@ -95,8 +95,8 @@ section { padding: clamp(72px, 10vw, 128px) 0; }
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; margin-top: 72px; margin-bottom: 8px;
   background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
 }
-.stats div { background: rgba(10, 20, 48, .85); padding: 22px 26px; display: flex; align-items: baseline; gap: 14px; }
-.stats b { font: 800 2.2rem/1 Sora, sans-serif; color: var(--teal); }
+.stats div { background: rgba(10, 20, 48, .85); padding: 22px 26px; display: flex; flex-direction: column; gap: 6px; }
+.stats b { font: 700 1.35rem/1.2 Sora, sans-serif; color: var(--teal); }
 .stats span { color: var(--muted); font-size: .95rem; }
 
 /* media (poster + play) */
