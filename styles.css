@@ -231,3 +231,18 @@ dialog::backdrop { background: rgba(2, 5, 15, .88); backdrop-filter: blur(6px); 
   .nav-in { gap: 12px; }
   .nav-in .btn-sm { padding: 9px 14px; font-size: .82rem; }
 }
+
+/* AI */
+.ai { background: radial-gradient(50% 60% at 50% 0%, rgba(16, 175, 152, .12), transparent 70%), var(--bg); }
+.ai-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 48px; }
+.ai-card {
+  position: relative; padding: 28px 24px; border-radius: var(--radius);
+  background: linear-gradient(180deg, rgba(108, 48, 252, .14), rgba(14, 26, 58, .6));
+  border: 1px solid rgba(108, 48, 252, .3);
+}
+.ai-card h3 { font-size: 1.1rem; margin: 14px 0 10px; }
+.ai-card p { color: var(--muted); font-size: .95rem; margin: 0; }
+.ai-ico { font: 800 .85rem Sora, sans-serif; color: var(--magenta); letter-spacing: .1em; }
+.ai-note { margin: 32px 0 0; color: var(--teal); font-weight: 500; }
+@media (max-width: 960px) { .ai-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 720px) { .ai-grid { grid-template-columns: 1fr; } }
