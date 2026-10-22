@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 160" width="560" height="160">
+  <g transform="translate(0,0) scale(5)">
+    <path d="M16 2C9.4 2 4 7.2 4 13.6 4 22 16 30 16 30s12-8 12-16.4C28 7.2 22.6 2 16 2z" fill="#E4572E"/>
+    <path d="M9 10.5h9v7H9zM18 12.8h3l2.4 2.6v2.1H18z" fill="#fff"/>
+    <circle cx="12" cy="18.2" r="1.9" fill="#fff" stroke="#E4572E" stroke-width="1.1"/>
+    <circle cx="20.4" cy="18.2" r="1.9" fill="#fff" stroke="#E4572E" stroke-width="1.1"/>
+  </g>
+  <text x="168" y="108" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-weight="800" font-size="88" letter-spacing="-3" fill="#FFFFFF">Curbside</text>
+</svg>

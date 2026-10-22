@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_10" data-name="Layer 10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1269.33 938.23">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #e000f2;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 24px;
+      }
+
+      .cls-4 {
+        fill: #10af98;
+      }
+
+      .cls-2 {
+        stroke: #6c30fc;
+      }
+
+      .cls-3 {
+        stroke: #10af98;
+      }
+
+      .cls-5 {
+        fill: #e000f2;
+      }
+
+      .cls-6 {
+        fill: #6c30fc;
+      }
+    </style>
+  </defs>
+  <circle class="cls-6" cx="1051.04" cy="257.52" r="19.12"/>
+  <path class="cls-3" d="M381.45,306.69v530.66h-138.03V153.2l138.03,153.49ZM1035.89,203.55l-233.18,1-236.82,288.23-134.47-146.1M678.92,837.35h142.79v-424.25l-142.79,167.13v257.12Z"/>
+  <polyline class="cls-1" points="251.83 76.46 632.94 486.78 910.73 149.38 1041.63 150.6"/>
+  <polyline class="cls-2" points="431.42 420.21 595.54 598.27 879.64 259.52 1035.89 259.52"/>
+  <circle class="cls-5" cx="1050.55" cy="150.77" r="19.12"/>
+  <circle class="cls-4" cx="1051.04" cy="203.55" r="19.12"/>
+</svg>
